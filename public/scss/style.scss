@@ -1,0 +1,15 @@
+// Подключение обнуляющих стилей
+@import 'nullstyle';
+
+// Подключение шрифтов
+@import 'fonts';
+
+
+// Имена шрифтов
+$caladea: 'Caladea', serif;
+$aileron: 'Aileron', sans-serif;
+
+// Цвета
+$primary-red: #d63c37;
+$primary-gray: #666;
+$secondary-gray: #333;
