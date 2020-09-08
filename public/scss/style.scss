@@ -48,9 +48,16 @@ html, body {
 		transition: all 0.3s ease;
 
 		&._active {
-			background-color: rgba(#fff, 0.8);
+			background-color: rgba(#fff, 0.9);
 			opacity: 1;
 			visibility: 1;
+		}
+
+		@media (max-width: 767px) {
+			padding: 20px 0 120px 0;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 100vh;
 		}
 	}
 
@@ -59,6 +66,10 @@ html, body {
 		margin: 0 20px;
 		&:hover {
 			color: $primary-red;
+		}
+
+		@media (max-width: 767px) {
+			font-size: 28px;
 		}
 	}
 
@@ -102,9 +113,17 @@ html, body {
 		top: 125px;
 		right: 65px;
 		width: 30px;
+		transition: 0.3s ease;
 		@media (max-width: 1201px) {
 			opacity: 0;
 			visibility: 0;
+		}
+		@media (max-width: 767px) {
+			right: 35px;
+			&._active {
+				opacity: 1;
+				visibility: 1;
+			}
 		}
 	}
 }
