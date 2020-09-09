@@ -16,6 +16,9 @@ $secondary-gray: #333;
 
 html, body {
 	font-family: $aileron;
+	&._active {
+		overflow: hidden;
+	}
 }
 
 .wrapper {
@@ -61,10 +64,18 @@ html, body {
 		}
 
 		@media (max-width: 767px) {
-			padding: 60px 0;
+			padding: 50px 0;
 			flex-direction: column;
 			justify-content: space-between;
 			height: 100vh;
+			overflow: scroll;
+
+			& li {
+				margin-bottom: 15px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
 		}
 	}
 
@@ -76,7 +87,7 @@ html, body {
 		}
 
 		@media (max-width: 767px) {
-			font-size: 22px;
+			font-size: 22px;	
 		}
 	}
 
@@ -311,7 +322,7 @@ html, body {
 		display: flex;
 		@media (max-width: 992px) {
 			flex-direction: column;
-			padding: 0 30px;
+			padding: 0 15px;
 		}
 	}
 
@@ -347,6 +358,7 @@ html, body {
 		font-size: 18px;
 		text-align: right;
 		@media (max-width: 767px) {
+			font-size: 14px;
 			text-align: center;
 		}
 	}
@@ -357,7 +369,8 @@ html, body {
 		letter-spacing: 0.6px;
 		margin-bottom: 30px;
 		@media (max-width: 767px) {
-			font-size: 22px;
+			font-size: 20px;
+			margin-bottom: 15px;
 		}
 	}
 
@@ -440,15 +453,14 @@ html, body {
 	line-height: 36px;
 	letter-spacing: 0.45px;
 
+	@media (max-width: 767px) {
+		font-size: 14px;
+		line-height: 24px;
+	}
+
 	&_red {
 		color: $primary-red;
 	}
 
-	&_main {
-		@media (max-width: 767px) {
-			font-size: 14px;
-			line-height: 24px;
-		}
-	}
 }
 
