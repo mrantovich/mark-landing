@@ -109,6 +109,7 @@ html, body {
   height: 160px;
   padding: 70px 0;
   transition: all 0.3s ease;
+  z-index: 3;
 }
 
 .header__menu {
@@ -283,6 +284,12 @@ html, body {
   min-height: 100vh;
 }
 
+@media (max-width: 767px) {
+  .introduce {
+    padding-top: 60px;
+  }
+}
+
 .introduce__box {
   display: flex;
 }
@@ -394,14 +401,33 @@ html, body {
   justify-content: center;
 }
 
+.discover__box {
+  margin: 60px 0;
+}
+
 .discover__title {
   text-align: right;
   padding-right: 100px;
   margin-bottom: 90px;
 }
 
+@media (max-width: 767px) {
+  .discover__title {
+    padding-right: 0;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
 .discover__subbox {
   display: flex;
+}
+
+@media (max-width: 992px) {
+  .discover__subbox {
+    flex-direction: column;
+    padding: 0 30px;
+  }
 }
 
 .discover__column {
@@ -413,6 +439,12 @@ html, body {
   margin-right: 0;
 }
 
+@media (max-width: 992px) {
+  .discover__column {
+    margin-right: 0;
+  }
+}
+
 .discover__item {
   display: flex;
   margin-bottom: 70px;
@@ -422,10 +454,26 @@ html, body {
   margin-bottom: 0;
 }
 
+@media (max-width: 767px) {
+  .discover__item {
+    margin-bottom: 40px;
+    flex-direction: column-reverse;
+  }
+  .discover__item:last-child {
+    margin-bottom: 40px;
+  }
+}
+
 .discover__text {
   color: #333;
   font-size: 18px;
   text-align: right;
+}
+
+@media (max-width: 767px) {
+  .discover__text {
+    text-align: center;
+  }
 }
 
 .discover__head {
@@ -445,6 +493,12 @@ html, body {
   display: flex;
   justify-content: center;
   min-width: 100px;
+}
+
+@media (max-width: 767px) {
+  .discover__pic {
+    margin-bottom: 20px;
+  }
 }
 
 .discover__pic-container {
@@ -471,6 +525,12 @@ html, body {
   font-family: "Caladea", serif;
   color: #333;
   font-size: 36px;
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 30px;
+  }
 }
 
 .title_big {
@@ -510,13 +570,13 @@ html, body {
   letter-spacing: 0.45px;
 }
 
+.text_red {
+  color: #d63c37;
+}
+
 @media (max-width: 767px) {
-  .text {
+  .text_main {
     font-size: 14px;
     line-height: 24px;
   }
-}
-
-.text_red {
-  color: #d63c37;
 }
