@@ -464,6 +464,10 @@ html, body {
   display: flex;
 }
 
+.discover__column {
+  flex: 0 0 45%;
+}
+
 .discover__item {
   display: -webkit-box;
   display: -ms-flexbox;
