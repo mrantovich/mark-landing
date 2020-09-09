@@ -304,6 +304,7 @@ html, body {
 
 	&__title {
 		text-align: right;
+		padding-right: 100px;
 		margin-bottom: 90px;
 	}
 
@@ -312,10 +313,19 @@ html, body {
 	}
 
 	&__column {
+		flex: 0 0 47%;
+		margin-right: 50px;
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 
 	&__item {
 		display: flex;
+		margin-bottom: 70px;
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	&__text {
@@ -338,20 +348,30 @@ html, body {
 	}
 
 	&__pic {
-		width: 100px;
+		display: flex;
+		justify-content: center;
+		min-width: 100px;
 
-		& img {
-			width: 100%;
+		&-container {
+			width: 64px;
+			height: 64px;
 			background-color: #fff;
 			border-radius: 50%;
+			position: relative;
+
+			&_empty {
+				background-color: $primary-red;
+				border: 5px solid #fff;
+			}
+
+			& img {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
 		}
 
-		&_fill {
-			
-		}
-
-		&_empty {
-		}
 	}
 }
 
