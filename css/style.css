@@ -483,6 +483,12 @@ html, body {
   margin-bottom: 30px;
 }
 
+@media (max-width: 767px) {
+  .discover__head {
+    font-size: 22px;
+  }
+}
+
 .discover__body {
   font-weight: 400;
   letter-spacing: 0.45px;

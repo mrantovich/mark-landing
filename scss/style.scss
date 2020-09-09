@@ -356,6 +356,9 @@ html, body {
 		font-weight: 700;
 		letter-spacing: 0.6px;
 		margin-bottom: 30px;
+		@media (max-width: 767px) {
+			font-size: 22px;
+		}
 	}
 
 	&__body {
