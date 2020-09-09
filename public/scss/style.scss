@@ -291,6 +291,50 @@ html, body {
 	}
 }
 
+.discover {
+
+	background-color: $primary-red;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	&__box {
+	}
+
+	&__title {
+	}
+
+	&__subbox {
+		display: flex;
+	}
+
+	&__column {
+	}
+
+	&__item {
+		display: flex;
+	}
+
+	&__text {
+	}
+
+	&__head {
+	}
+
+	&__body {
+	}
+
+	&__pic {
+
+		&_fill {
+		}
+
+		&_empty {
+		}
+	}
+}
+
 .title {
 
 	font-family: $caladea;
@@ -310,6 +354,10 @@ html, body {
 
 	&_red {
 		color: $primary-red;
+	}
+
+	&_white {
+		color: #fff;
 	}
 
 	&_underline {
