@@ -15,13 +15,13 @@ $primary-gray: #666;
 $secondary-gray: #333;
 
 html, body {
-	height: 100%;
 	font-family: $aileron;
 }
 
 
-body {
+html, body {
 	@media (max-width: 767px) {
+		overflow: auto;
 		&._lock {
 			overflow: hidden;
 		}
@@ -59,7 +59,7 @@ body {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: #fff;
+		background-color: rgba(#ffffff, 0.9);
 		z-index: 2;
 		opacity: 0;
 		visibility: hidden;
