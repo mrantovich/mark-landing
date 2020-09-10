@@ -385,6 +385,9 @@ body {
 		font-weight: 400;
 		letter-spacing: 0.45px;
 		line-height: 36px;
+		@media (max-width: 767px) {
+			line-height: 24px;
+		}
 	}
 
 	&__pic {

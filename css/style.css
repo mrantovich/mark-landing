@@ -511,6 +511,12 @@ html, body {
   line-height: 36px;
 }
 
+@media (max-width: 767px) {
+  .discover__body {
+    line-height: 24px;
+  }
+}
+
 .discover__pic {
   display: flex;
   justify-content: center;
