@@ -21,7 +21,6 @@ html, body {
 
 html, body {
 	@media (max-width: 767px) {
-		overflow: auto;
 		&._lock {
 			overflow: hidden;
 		}
