@@ -30,6 +30,7 @@ html, body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  overflow: auto;
 }
 
 input, button, textarea {
@@ -91,9 +92,6 @@ html, body {
 }
 
 @media (max-width: 767px) {
-  html, body {
-    overflow: auto;
-  }
   html._lock, body._lock {
     overflow: hidden;
   }
