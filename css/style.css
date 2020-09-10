@@ -90,8 +90,13 @@ html, body {
   font-family: "Aileron", sans-serif;
 }
 
-html._active, body._active {
-  overflow: hidden;
+@media (max-width: 767px) {
+  html, body {
+    overflow: auto;
+  }
+  html._lock, body._lock {
+    overflow: hidden;
+  }
 }
 
 .wrapper {
@@ -506,6 +511,12 @@ html._active, body._active {
   font-weight: 400;
   letter-spacing: 0.45px;
   line-height: 36px;
+}
+
+@media (max-width: 767px) {
+  .discover__body {
+    line-height: 24px;
+  }
 }
 
 .discover__pic {
