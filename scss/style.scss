@@ -19,9 +19,11 @@ html, body {
 }
 
 
-html, body {
+body {
 	@media (max-width: 767px) {
 		&._lock {
+			height: 100%;
+			margin: 0;
 			overflow: hidden;
 		}
 	}
