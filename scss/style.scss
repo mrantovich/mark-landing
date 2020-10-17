@@ -18,7 +18,6 @@ html, body {
 	font-family: $aileron;
 }
 
-
 body {
 	@media (max-width: 767px) {
 		&._lock {
@@ -31,7 +30,6 @@ body {
 
 .wrapper {
 	width: 100%;
-	height: 100%;
 }
 
 .container {
@@ -60,7 +58,7 @@ body {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(#ffffff, 1);
+		background-color: #fff;
 		z-index: 2;
 		opacity: 0;
 		visibility: hidden;
@@ -76,7 +74,7 @@ body {
 			flex-direction: column;
 			justify-content: space-between;
 			height: 100vh;
-			overflow: scroll;
+			overflow: scroll;	
 
 			& li {
 				margin-bottom: 15px;
@@ -297,8 +295,19 @@ body {
 
 	&__up-red {
 		padding-left: 130px;
+		position: relative;
+		& i {
+			position: absolute;
+			top: 8px;
+			left: 100px;
+		}
 		@media (max-width: 992px) {
 			padding: 0 30px;
+			& i {
+				position: absolute;
+				top: 5px;
+				left: 0;
+			}
 		}
 	}
 }
